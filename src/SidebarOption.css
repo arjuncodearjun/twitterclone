@@ -1,0 +1,33 @@
+.sidebarOption {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+/* hover effect */
+
+.sidebarOption:hover {
+  /* We defined variables in App.css */
+  background-color: var(--twitter-background);
+  border-radius: 30px;
+  color: var(--twitter-color);
+  transition: color 100ms ease-out;
+}
+
+/* Class for MUI icons=>  .sidebarOption > .MuiSvgIcon-root */
+.sidebarOption .mIcons {
+  padding: 20px;
+}
+
+/* Styling the side texts */
+.sidebarOption .sideTexts {
+  font-weight: 800;
+  font-size: 20px;
+  margin-right: 20px;
+}
+
+/* Activating any sidebaroption---- by default home is active */
+
+.sidebarOption--active {
+  color: var(--twitter-color);
+}
